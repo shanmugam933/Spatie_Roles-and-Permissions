@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
-Route::post('/register-api', [APIcontroller::class,'store']);
-Route::post('/login-api', [APIcontroller::class,'show']);
-Route::get('/staff-api', [APIcontroller::class,'getstaff'])->middleware('auth:sanctum');;
-Route::get('/detail-api', [APIcontroller::class,'detail'])->middleware('auth:sanctum');
+Route::post('/register', [APIcontroller::class,'store']);
+Route::post('/login', [APIcontroller::class,'show']);
+Route::get('/staff', [APIcontroller::class,'getstaff'])->middleware('auth:sanctum');
+Route::get('/detail', [APIcontroller::class,'detail'])->middleware('auth:sanctum');
